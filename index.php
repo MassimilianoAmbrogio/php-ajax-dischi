@@ -29,15 +29,20 @@ include __DIR__ . '/partial/database.php';
         <!-- Main-content -->
         <main>
             <section class="database">
-                <div class="container">
-                    <?php foreach ($database as $data) { ?>
-                        <img src="<?php echo $data['poster'] ?>" alt="Img Album">
-                        <h2> <?php echo $data['title'] ?></h2>
-                        <p> <?php echo $data['author'] ?></p>
-                        <p> <?php echo $data['year'] ?></p>
-                        <p> <?php echo $data['genre'] ?></p>
-                    <?php } ?>
-                </div>
+                <!-- Albums -->
+                <ul class="cds-list">
+                    <li class="cd">
+                        <?php foreach ($database as $data) { ?>
+                            <div class="wrap-image">
+                                <img src="<?php echo $data['poster'] ?>" alt="Img Album">
+                            </div>
+                            <h2 class="title"> <?php echo $data['title'] ?></h2>
+                            <p class="author"> <?php echo $data['author'] ?></p>
+                            <p class="year"> <?php echo $data['year'] ?></p>
+                            <p class="genre"> <?php echo $data['genre'] ?></p>
+                        <?php } ?> 
+                    </li>
+                </ul>
             </section>
         </main>
     </div>
