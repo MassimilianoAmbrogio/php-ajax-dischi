@@ -12,8 +12,6 @@ include __DIR__ . '/partial/database.php';
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="dist/css/app.css">
 </head>
@@ -47,6 +45,6 @@ include __DIR__ . '/partial/database.php';
     <!-- JS  -->
     <script src="./dist/js/main.js"></script>
 
-    <!-- Inizio esercizio php ajax dischi -->
+    <!-- Fine esercizio php ajax dischi -->
 </body>
 </html>
