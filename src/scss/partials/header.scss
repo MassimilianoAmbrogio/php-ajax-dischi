@@ -1,0 +1,11 @@
+// HEADER
+header {
+    padding: 10px 10px 5px;
+    background: $black;
+    
+    .cont-logo img {
+        max-height: 50px;
+        margin-left: 26%;
+        cursor: pointer;
+    }
+}
