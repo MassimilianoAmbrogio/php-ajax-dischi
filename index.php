@@ -1,7 +1,5 @@
-<?php
-// Dati albums 
-include __DIR__ . '/partial/database.php';
-?>
+<!-- Dati albums  -->
+<?php require_once __DIR__ . '/data/database.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,22 +26,20 @@ include __DIR__ . '/partial/database.php';
 
         <!-- Main-content -->
         <main>
-            <section class="database">
+            <div class="container">
                 <!-- Albums -->
                 <ul class="cds-list">
-                    <li class="cd">
-                        <?php foreach ($database as $data) { ?>
-                            <div class="wrap-image">
-                                <img src="<?php echo $data['poster'] ?>" alt="Img Album">
-                            </div>
+                    <?php foreach ($database as $data) { ?>
+                        <li class="cd">
+                            <img src="<?php echo $data['poster'] ?>" alt="Img Album">
                             <h2 class="title"> <?php echo $data['title'] ?></h2>
                             <p class="author"> <?php echo $data['author'] ?></p>
                             <p class="year"> <?php echo $data['year'] ?></p>
                             <p class="genre"> <?php echo $data['genre'] ?></p>
-                        <?php } ?> 
-                    </li>
+                        </li>
+                    <?php } ?> 
                 </ul>
-            </section>
+            </div>
         </main>
     </div>
 

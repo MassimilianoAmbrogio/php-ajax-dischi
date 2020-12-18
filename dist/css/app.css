@@ -14,7 +14,7 @@ img {
 
 header {
   padding: 10px 10px 5px;
-  background: #142531;
+  background: #000;
 }
 header .cont-logo img {
   max-height: 50px;
@@ -25,6 +25,12 @@ header .cont-logo img {
 main {
   background: #192e3d;
 }
+main .container {
+  display: flex;
+  justify-content: center;
+  margin-left: 24%;
+  width: 50%;
+}
 main .cds-list {
   display: flex;
   flex-wrap: wrap;
@@ -33,27 +39,26 @@ main .cds-list {
   list-style: none;
 }
 main .cd {
-  flex-basis: 200px;
+  flex-basis: 240px;
   margin: 10px 20px;
-  padding: 20px;
+  padding: 14px;
   text-align: center;
   background: #000;
 }
-main .wrap-image {
-  min-height: 170px;
+main .cd img {
+  width: 178px;
 }
 main .cd .title {
-  margin: 20px 0;
-  text-transform: uppercase;
+  margin: 14px 0;
   font-size: 22px;
   color: #fff;
 }
 main .cd .author,
 main .cd .year,
 main .cd .genre {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #fff;
 }
 main .cd .author {
-  font-size: 20px;
+  font-size: 18px;
 }
