@@ -18,7 +18,7 @@ header {
 }
 header .cont-logo img {
   max-height: 50px;
-  margin-left: 26%;
+  margin-left: 25%;
   cursor: pointer;
 }
 
@@ -28,7 +28,7 @@ main {
 main .container {
   display: flex;
   justify-content: center;
-  margin-left: 24%;
+  margin-left: 25%;
   width: 50%;
 }
 main .cds-list {
