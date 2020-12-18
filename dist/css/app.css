@@ -62,3 +62,10 @@ main .cd .genre {
 main .cd .author {
   font-size: 18px;
 }
+main .genre-filter {
+  text-align: center;
+  color: #fff;
+}
+main .genre-filter select {
+  margin-left: 10px;
+}
