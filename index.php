@@ -26,19 +26,6 @@
 
         <!-- Main-content -->
         <main>
-            <!-- Filtri generi musicali -->
-            <div class="genre-filter">
-                Filter by genred
-                <select v-model="actualGenre"
-                    @change="filterGenred"
-                >
-                    <option value="all">All</option>
-                    <option value="pop">Pop</option>
-                    <option value="rock">Rock</option>
-                    <option value="metal">Metal</option>
-                    <option value="jazz">Jazz</option>
-                </select>
-            </div>
             <div class="container">
                 <!-- Albums -->
                 <ul class="cds-list">
