@@ -47,6 +47,7 @@ main .cd {
 }
 main .cd img {
   width: 178px;
+  cursor: pointer;
 }
 main .cd .title {
   margin: 14px 0;
