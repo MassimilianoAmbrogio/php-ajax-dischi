@@ -46,4 +46,13 @@ main {
     .cd .author {
         font-size: 18px;
     }
+
+    .genre-filter {
+        margin-left: 43%;
+        color: $white;
+    }
+    
+    .genre-filter select {
+        margin-left: 10px;
+    }
 }

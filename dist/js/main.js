@@ -14420,10 +14420,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 
 
-console.log('Vue is ok');
+/**
+ * ALBUMS
+ */
+
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
-  data: {}
+  data: {
+    albums: [],
+    artists: [],
+    filterArtist: 'all'
+  },
+  created: function created() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(window.location.href + '/scripts/get-albums.php').then(function (response) {
+      console.log(response.data);
+      _this.albums = response.data.albums;
+      _this.artists = response.data.artists;
+    })["catch"](function (error) {
+      console.log(error);
+    });
+  },
+  methods: {
+    getFiltered: function getFiltered() {
+      var _this2 = this;
+
+      axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(window.location.href + '/scripts/get-albums.php', {
+        params: {
+          artist: this.filterArtist
+        }
+      }).then(function (response) {
+        console.log(response.data);
+        _this2.albums = response.data.albums;
+        _this2.artists = response.data.artists;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
+  }
 });
 
 /***/ }),
