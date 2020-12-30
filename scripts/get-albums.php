@@ -1,9 +1,9 @@
 <?php
 // Get Database
-require_once __DIR__ . '/../partial/database.php';
+require_once __DIR__ . '/../partials/database.php';
 
 // Get albums
-$artist = empty($GET['artist']) ? false : $GET['artist'];
+$artist = empty($_GET['artist']) ? false : $_GET['artist'];
 
 $albums = [];
 if($artist == false || $artist == 'all') {

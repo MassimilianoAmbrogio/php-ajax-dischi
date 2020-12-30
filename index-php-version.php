@@ -1,5 +1,5 @@
 <!-- Dati albums  -->
-<?php require_once __DIR__ . '/partial/database.php'; ?>
+<?php require_once __DIR__ . '/partials/database.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,21 +28,18 @@
             <div class="container">
                 <!-- Albums -->
                 <ul class="cds-list">
-                    <?php foreach ($database as $value) { ?>
+                    <?php foreach ($database as $data) { ?>
                         <li class="cd">
-                            <img src="<?php echo $value['poster'] ?>">
-                            <h2 class="title"> <?php echo $value['title'] ?></h2>
-                            <p class="author"> <?php echo $value['author'] ?></p>
-                            <p class="year"> <?php echo $value['year'] ?></p>
-                            <p class="genre"> <?php echo $value['genre'] ?></p>
+                            <img src="<?php echo $data['poster'] ?>" alt="<?php echo $data['title ']; ?>">
+                            <h2 class="title"> <?php echo $data['title'] ?></h2>
+                            <p class="author"> <?php echo $data['author'] ?></p>
+                            <p class="year"> <?php echo $data['year'] ?></p>
+                            <p class="genre"> <?php echo $data['genre'] ?></p>
                         </li>
                     <?php } ?> 
                 </ul>
             </div>
         </main>
-
-    <!-- JS  -->
-    <script src="./dist/js/main.js"></script>
 
     <!-- Fine esercizio php ajax dischi -->
 </body>
